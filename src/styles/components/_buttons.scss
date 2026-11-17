@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.btn {
+  @include focus-ring;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  min-height: 3.1rem;
+  padding: 0.85rem 1.05rem;
+  border: 1px solid $line-strong;
+  border-radius: 0;
+  color: $mist;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background $duration $ease-out, color $duration $ease-out, border-color $duration $ease-out;
+
+  &:hover {
+    background: $mist;
+    border-color: $mist;
+    color: $obsidian;
+  }
+}
+
+.btn-primary {
+  background: $blue;
+  border-color: $blue;
+  color: $obsidian;
+
+  &:hover {
+    background: $mist;
+    border-color: $mist;
+    color: $obsidian;
+  }
+}
+
+.btn-ghost {
+  background: transparent;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}

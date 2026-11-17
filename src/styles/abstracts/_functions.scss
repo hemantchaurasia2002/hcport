@@ -1,0 +1,9 @@
+@use "sass:math";
+
+// Fluid size between a minimum and maximum, in pixels, across a 360–1440 viewport.
+@function fluid($min, $max) {
+  $slope: math.div($max - $min, 1440 - 360);
+  $intercept: $min - $slope * 360;
+
+  @return clamp(#{$min}px, #{$intercept}px + #{$slope * 100}vw, #{$max}px);
+}

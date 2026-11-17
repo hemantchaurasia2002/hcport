@@ -1,0 +1,207 @@
+@use "../abstracts" as *;
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--header);
+  padding: 0 1.2rem;
+  background: linear-gradient(180deg, rgba(8, 9, 13, 0.88), rgba(8, 9, 13, 0));
+  pointer-events: none;
+
+  @include from($bp-md) {
+    padding: 0 2.5rem;
+  }
+
+  a,
+  button {
+    pointer-events: auto;
+  }
+}
+
+.nav-name {
+  @include focus-ring;
+
+  color: $mist;
+  font-family: $font-display;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.nav-links {
+  display: none;
+  gap: 1.4rem;
+
+  @include from($bp-lg) {
+    display: flex;
+  }
+
+  a {
+    @include focus-ring;
+
+    color: $steel;
+    font-family: $font-mono;
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &[aria-current="true"] {
+      color: $mist;
+    }
+  }
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-icon {
+  @include focus-ring;
+
+  min-height: 2.6rem;
+  padding: 0 0.7rem;
+  color: $mist;
+  font-family: $font-mono;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem 1.2rem 2rem;
+  background: rgba(8, 9, 13, 0.96);
+  backdrop-filter: blur(16px);
+
+  @supports not (backdrop-filter: blur(16px)) {
+    background: $obsidian;
+  }
+
+  @include from($bp-md) {
+    padding: 2.5rem;
+  }
+}
+
+.nav-overlay-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--header);
+  padding: 0 1.2rem;
+
+  @include from($bp-md) {
+    padding: 0 2.5rem;
+  }
+}
+
+.nav-overlay-list {
+  display: grid;
+  gap: 0.2rem;
+
+  a {
+    @include focus-ring;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.35rem 0;
+    color: $mist;
+    font-family: $font-display;
+    font-size: fluid(40, 76);
+    font-weight: 500;
+    letter-spacing: -0.045em;
+    line-height: 0.95;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    span {
+      color: $steel;
+      font-family: $font-mono;
+      font-size: 0.72rem;
+      letter-spacing: 0.16em;
+    }
+
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.command {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  display: grid;
+  align-items: start;
+  justify-items: center;
+  padding: 12vh 1rem 1rem;
+  background: rgba(8, 9, 13, 0.72);
+}
+
+.command-panel {
+  width: min(640px, 100%);
+  border: 1px solid $line-strong;
+  background: $graphite;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+}
+
+.command-input {
+  width: 100%;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid $line;
+  font-family: $font-mono;
+  font-size: 0.95rem;
+
+  &::placeholder {
+    color: $steel;
+  }
+}
+
+.command-list {
+  max-height: 50vh;
+  overflow: auto;
+
+  button {
+    @include focus-ring;
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.85rem 1.1rem;
+    text-align: left;
+
+    &:hover,
+    &[data-active="true"] {
+      background: rgba(71, 125, 255, 0.12);
+    }
+
+    small {
+      color: $steel;
+      font-family: $font-mono;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+  }
+}

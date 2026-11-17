@@ -1,0 +1,74 @@
+# Hemant Chaurasia — full profile for language models
+
+This file matches the public portfolio. It does not add employers, metrics, or expertise that the site does not claim.
+
+## Identity
+
+Hemant Chaurasia is a Computer Science Engineering graduate from Khwaja Moinuddin Chishti Language University, Lucknow (B.Tech, 2021–2025, SGPA 7.0 stated on his resume). He also studied at Colvin Taluqdars College (2019–2021, 84%) and Bal Vidya Mandir Senior Secondary School (2016–2018, 74%).
+
+He lives in Lucknow, Uttar Pradesh, India, and is open to work. He describes himself as a technology enthusiast, an aspiring software professional, a builder, a problem solver, and a digital community operator. He is not limited to one job title.
+
+## Professional experience
+
+Maaricha — Web Development Intern — April 2024 to September 2024 — Hazratganj, Lucknow.
+
+He maintained website content and database information, investigated functionality issues, worked with WordPress and Wix, troubleshot user-facing bugs, and collaborated with the team. One platform was Ivani Diamonds, a Wix website. This was maintenance of an existing site, not a product he founded.
+
+## Community experience
+
+Storm Esports — he managed a Discord server of about 15,000 members.
+
+Responsibilities: server management; Tier 2 and Tier 3 BGMI scrims; small BGMI tournaments; registrations and registration automation; channels, roles, permissions, and settings; Discord bots and API integrations; community coordination and member support.
+
+No engagement rates or attendance figures are published, because they were not provided.
+
+## Projects
+
+1. Simple Web Server — Golang. A basic HTTP server for learning requests, responses, routes, and server behaviour. https://github.com/hemantchaurasia2002/simple_web_server
+2. Slack Age Bot — Golang. Calculates age from a date of birth inside Slack, with validation. https://github.com/hemantchaurasia2002/slack_age_bot
+3. Email Checker Tool — Golang. Format checks plus mail-server connectivity and response handling. https://github.com/hemantchaurasia2002/email_checker_tool
+4. Online Resume Builder — HTML, CSS, and JavaScript, made during B.Tech summer training. No public repository was provided.
+5. Ivani Diamonds — Wix maintenance during the Maaricha internship. No public repository was provided.
+
+Case studies: /work/simple-web-server /work/slack-age-bot /work/email-checker-tool /work/online-resume-builder /work/ivani-diamonds
+
+## Skills
+
+Languages: JavaScript (ES6+), Python, Golang, SQL.
+Frontend: HTML5, CSS3, JavaScript, React, Next.js, responsive design.
+Backend fundamentals: Node.js, HTTP, REST, basic server development.
+Data: MySQL, SQL, validation, PopSQL.
+Tools: Git, GitHub, Visual Studio Code, Figma, Microsoft Excel, WordPress, Wix, Unity, Discord.
+Practice: debugging, root-cause thinking, troubleshooting, technical communication, community management, workflow automation.
+
+## Gaming
+
+BGMI content on YouTube. The channel URL was not available when this site was built.
+2D games made in Unity.
+Esports operations through Storm Esports.
+
+He is interested in game operations, LiveOps, esports operations, community management, player support, and player engagement. Topics he has been exploring include D1, D7, and D30 retention, funnels, LiveOps calendars, the Indian mobile gaming market, player support, and Jira-style task tracking. These are interests and study, not claimed industry tenure.
+
+## Artificial intelligence
+
+He is interested in data annotation, content evaluation, labelling of text, image, audio, and video, dataset quality, and factual checking. He is open to analyst-style work. He does not claim advanced machine-learning expertise.
+
+## Other notes
+
+Hacktoberfest 2023: participated in open-source contributions.
+A logo he designed for Full-Stack Quantum Computation won a T-shirt in a contest.
+
+Courses listed on his public LinkedIn, not re-verified for this site: Get Started with Figma (February 2024); Programming for Everybody, University of Michigan (July 2022); Fundamentals of Graphic Design, California Institute of the Arts (August 2021); Mathematical Thinking in Computer Science, University of California San Diego (November 2020); Principles of Game Design, Michigan State University (August 2020); Introduction to Game Development, Michigan State University (July 2020).
+
+## Direction
+
+He wants early-career opportunities in software and frontend development, technical support and troubleshooting, AI-related analytical and data-quality work, gaming operations and LiveOps, or esports and community operations. The goal he states is a career of useful work, learning, and collaboration, not only a first job.
+
+## Contact
+
+Email: chaurasiahemant2002@gmail.com
+LinkedIn: https://www.linkedin.com/in/hemant-chaurasia/
+GitHub: https://github.com/hemantchaurasia2002
+Resume: /Hemant-Chaurasia-Resume.pdf
+
+A production domain was not set in the repository. Canonical URLs and the sitemap are emitted when NEXT_PUBLIC_SITE_URL is configured.

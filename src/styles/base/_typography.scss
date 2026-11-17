@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+h1,
+h2,
+h3,
+.display {
+  font-family: $font-display;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+  text-transform: uppercase;
+}
+
+.kicker {
+  margin: 0 0 1rem;
+  color: $steel;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.lede {
+  max-width: 42rem;
+  color: rgba(232, 233, 239, 0.86);
+  font-size: fluid(16, 18);
+  line-height: 1.7;
+}
+
+.prose {
+  max-width: 40rem;
+
+  p + p {
+    margin-top: 1rem;
+  }
+}
+
+.display {
+  font-size: fluid(40, 92);
+}
+
+.display-md {
+  font-family: $font-display;
+  font-size: fluid(32, 64);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.94;
+  text-transform: uppercase;
+}

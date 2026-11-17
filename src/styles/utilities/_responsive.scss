@@ -1,0 +1,37 @@
+@use "../abstracts" as *;
+
+.stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.split {
+  display: grid;
+  gap: 2rem;
+
+  @include from($bp-lg) {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 4rem;
+    align-items: end;
+  }
+}
+
+.two {
+  display: grid;
+  gap: 1.5rem;
+
+  @include from($bp-md) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.three {
+  display: grid;
+  gap: 1px;
+  background: $line;
+
+  @include from($bp-md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

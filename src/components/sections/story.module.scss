@@ -1,0 +1,184 @@
+@use "../../styles/abstracts" as *;
+
+.chapter {
+  position: relative;
+  padding: fluid(72, 128) 0;
+  background:
+    radial-gradient(900px 420px at var(--spot-x, 80%) var(--spot-y, 0%), color-mix(in srgb, var(--glow) 16%, transparent), transparent 70%),
+    $obsidian;
+}
+
+.chapterHead {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: fluid(36, 72);
+}
+
+.portrait {
+  position: relative;
+  overflow: hidden;
+  background: $graphite;
+  min-height: 280px;
+
+  img {
+    object-fit: cover;
+    filter: saturate(0.88) contrast(1.04);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 55%, rgba(8, 9, 13, 0.72));
+    pointer-events: none;
+  }
+}
+
+.caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  color: $steel;
+  font-family: $font-mono;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.ledger {
+  display: grid;
+
+  li,
+  a {
+    display: grid;
+    gap: 0.35rem 1rem;
+    padding: 1.15rem 0;
+    border-top: 1px solid $line;
+    color: inherit;
+    text-decoration: none;
+
+    @include from($bp-md) {
+      grid-template-columns: 3.2rem 0.7fr 1.3fr;
+      align-items: baseline;
+    }
+  }
+
+  a {
+    @include focus-ring;
+
+    &:hover strong {
+      color: $blue;
+    }
+  }
+}
+
+.index {
+  color: $steel;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.note {
+  color: $steel;
+  font-size: 0.95rem;
+}
+
+.panel {
+  padding: 1.25rem 0;
+  border-top: 1px solid $line;
+}
+
+.stat {
+  font-family: $font-display;
+  font-size: fluid(48, 88);
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+}
+
+.rail {
+  display: none;
+
+  @include from($bp-xl) {
+    position: fixed;
+    top: 50%;
+    right: 1.1rem;
+    z-index: 30;
+    display: grid;
+    gap: 0.45rem;
+    transform: translateY(-50%);
+  }
+
+  a {
+    @include focus-ring;
+
+    display: grid;
+    grid-template-columns: 1.4rem 0.45rem;
+    align-items: center;
+    justify-content: end;
+    color: $steel;
+    font-family: $font-mono;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+
+    i {
+      width: 0.45rem;
+      height: 1px;
+      background: currentColor;
+      justify-self: end;
+    }
+
+    &[data-active="true"] {
+      color: $mist;
+
+      i {
+        width: 1.1rem;
+        background: $blue;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 1.5rem 0 2rem;
+  border-top: 1px solid $line;
+  color: $steel;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+
+  .frame {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem 1.5rem;
+    justify-content: space-between;
+  }
+
+  a {
+    @include focus-ring;
+    text-decoration: none;
+
+    &:hover {
+      color: $mist;
+    }
+  }
+}
+
+.network {
+  width: min(100%, 460px);
+  height: auto;
+
+  path,
+  circle {
+    fill: none;
+    stroke: rgba(82, 214, 196, 0.75);
+    stroke-width: 1;
+  }
+
+  circle {
+    fill: #52d6c4;
+    stroke: none;
+  }
+}

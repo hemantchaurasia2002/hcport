@@ -1,0 +1,98 @@
+@use "../abstracts" as *;
+
+:root {
+  --obsidian: #{$obsidian};
+  --graphite: #{$graphite};
+  --mist: #{$mist};
+  --blue: #{$blue};
+  --red: #{$red};
+  --violet: #{$violet};
+  --mint: #{$mint};
+  --amber: #{$amber};
+  --steel: #{$steel};
+  --header: #{$header};
+  --glow: #{$blue};
+}
+
+body {
+  cursor: auto;
+}
+
+main {
+  outline: none;
+}
+
+[id] {
+  scroll-margin-top: calc(var(--header) + 0.75rem);
+}
+
+.frame {
+  @include frame;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 80;
+  padding: 0.7rem 1rem;
+  background: $mist;
+  color: $obsidian;
+  font-family: $font-mono;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform: translateY(-150%);
+
+  &:focus {
+    transform: none;
+  }
+}
+
+html.js [data-reveal],
+html.js .hero-animate {
+  opacity: 0;
+  transform: translateY(22px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js [data-reveal],
+  html.js .hero-animate {
+    opacity: 1;
+    transform: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media (pointer: fine) {
+  html.has-cursor,
+  html.has-cursor * {
+    cursor: none;
+  }
+
+  html.has-cursor input,
+  html.has-cursor textarea {
+    cursor: text;
+  }
+}

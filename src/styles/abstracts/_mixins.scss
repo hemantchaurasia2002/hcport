@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+@mixin focus-ring {
+  &:focus-visible {
+    outline: 2px solid $blue;
+    outline-offset: 3px;
+  }
+}
+
+@mixin frame {
+  width: min(#{$frame}, calc(100% - 2.4rem));
+  margin-inline: auto;
+
+  @media (min-width: 768px) {
+    width: min(#{$frame}, calc(100% - 5rem));
+  }
+}
+
+@mixin hairline {
+  border: 0;
+  border-top: 1px solid $line;
+}

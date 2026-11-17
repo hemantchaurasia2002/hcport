@@ -1,0 +1,46 @@
+@use "../../../styles/abstracts" as *;
+
+.page {
+  padding: calc(var(--header) + 2.5rem) 0 4rem;
+}
+
+.back {
+  @include focus-ring;
+  color: $steel;
+  font-family: $font-mono;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $mist;
+  }
+}
+
+.stackList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+
+  li {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid $line;
+    color: $steel;
+    font-family: $font-mono;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+.block + .block {
+  margin-top: 2.2rem;
+}
+
+.missing {
+  margin-top: 2rem;
+  color: $steel;
+  font-size: 0.95rem;
+}

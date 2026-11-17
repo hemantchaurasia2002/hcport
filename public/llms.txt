@@ -1,0 +1,38 @@
+# Hemant Chaurasia
+
+Computer Science Engineering graduate in Lucknow, Uttar Pradesh, India. Open to work.
+
+Theme: The Human Behind the Machine.
+Tagline: Curiosity builds things. Experiences shape people. The journey never stops.
+
+## Now
+
+- Web development intern at Maaricha, April 2024–September 2024, Hazratganj, Lucknow. Website maintenance, database consistency, WordPress, Wix, and troubleshooting. Worked on the Ivani Diamonds site.
+- Managed the Storm Esports Discord, about 15,000 members: scrims, small BGMI tournaments, registrations, bots, roles, and community operations.
+- Personal projects in Golang: a simple web server, a Slack age bot, and an email checker. An online resume builder in HTML, CSS, and JavaScript from B.Tech summer training.
+- Interests, not claimed expertise: AI data quality and content evaluation, and mobile-gaming LiveOps.
+
+## Skills
+
+JavaScript, Python, Golang, SQL, HTML, CSS, React, Next.js, Node.js basics, MySQL, Git, GitHub, Figma, Excel, WordPress, Wix, Unity, Discord.
+
+## Contact
+
+- Email: chaurasiahemant2002@gmail.com
+- LinkedIn: https://www.linkedin.com/in/hemant-chaurasia/
+- GitHub: https://github.com/hemantchaurasia2002
+- Resume: /Hemant-Chaurasia-Resume.pdf
+
+## Site
+
+- / #human — about
+- / #builder — skills and projects
+- / #operator — Maaricha and Storm Esports
+- / #player — gaming
+- / #explorer — interests
+- / #next — direction
+- / #connection — contact
+- /projects.md
+- /experience.md
+- /profile.md
+- /llms-full.txt

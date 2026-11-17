@@ -1,0 +1,48 @@
+@keyframes drift {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(320%);
+  }
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.horizon {
+  position: relative;
+  height: 1px;
+  margin: 2.5rem 0 2rem;
+  background: linear-gradient(90deg, transparent, #ff4b35, #477dff, transparent);
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -36px;
+    width: 28%;
+    height: 72px;
+    background: radial-gradient(closest-side, rgba(71, 125, 255, 0.45), transparent);
+    animation: drift 16s linear infinite;
+  }
+}
+
+.status-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #ff4b35;
+  animation: pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .horizon::after,
+  .status-dot {
+    animation: none;
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Hemant Chaurasia",
+  "location": "Lucknow, Uttar Pradesh, India",
+  "status": "Open to work",
+  "email": "chaurasiahemant2002@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/hemant-chaurasia/",
+  "github": "https://github.com/hemantchaurasia2002",
+  "resume": "/Hemant-Chaurasia-Resume.pdf",
+  "education": [
+    {
+      "institution": "Khwaja Moinuddin Chishti Language University",
+      "credential": "B.Tech, Computer Science Engineering",
+      "years": "2021-2025",
+      "note": "SGPA 7.0 stated on resume"
+    }
+  ],
+  "experience": [
+    {
+      "organization": "Maaricha",
+      "role": "Web Development Intern",
+      "dates": "April 2024 - September 2024",
+      "location": "Hazratganj, Lucknow"
+    },
+    {
+      "organization": "Storm Esports",
+      "role": "Discord community management",
+      "scale": "about 15000 members"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Simple Web Server",
+      "stack": ["Golang"],
+      "url": "https://github.com/hemantchaurasia2002/simple_web_server"
+    },
+    {
+      "name": "Slack Age Bot",
+      "stack": ["Golang"],
+      "url": "https://github.com/hemantchaurasia2002/slack_age_bot"
+    },
+    {
+      "name": "Email Checker Tool",
+      "stack": ["Golang"],
+      "url": "https://github.com/hemantchaurasia2002/email_checker_tool"
+    },
+    {
+      "name": "Online Resume Builder",
+      "stack": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "name": "Ivani Diamonds website maintenance",
+      "stack": ["Wix", "WordPress"]
+    }
+  ]
+}
