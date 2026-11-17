@@ -11,7 +11,7 @@ export const profile = {
   resume: "/Hemant-Chaurasia-Resume.pdf",
   youtubeNote:
     "I make BGMI-focused videos. The channel address is not published on this site yet.",
-  title: "Hemant Chaurasia — The Human Behind the Machine",
+  title: "Hemant Chaurasia | Builder, Operator, Explorer",
   description:
     "Hemant Chaurasia is a Computer Science Engineering graduate in Lucknow. He builds for the web, writes small programs in Golang, JavaScript, and Python, and has managed a 15,000-member esports Discord. Open to work.",
   tagline: "Curiosity builds things. Experiences shape people. The journey never stops.",
@@ -38,7 +38,7 @@ export const education = [
 
 export const photos = {
   formal: {
-    src: "/images/personal/portrait-formal.jpg",
+    src: "/images/personal/portrait-formal-cut.png",
     width: 1024,
     height: 854,
     alt: "Hemant Chaurasia in a navy suit and glasses, smiling in a bright interior.",

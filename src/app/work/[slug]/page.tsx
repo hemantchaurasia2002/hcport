@@ -38,7 +38,7 @@ export default async function ProjectPage({ params }: Props) {
   };
 
   return (
-    <article className={`frame ${styles.page}`}>
+    <article className={`frame page-case ${styles.page}`}>
       <p>
         <Link className={styles.back} href="/#builder">
           Back to work

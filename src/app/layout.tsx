@@ -1,28 +1,22 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono, Inter, Space_Grotesk } from "next/font/google";
+import { DM_Sans, Instrument_Serif } from "next/font/google";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { profile, siteUrl } from "@/data/profile";
-import "lenis/dist/lenis.css";
 import "@/styles/main.scss";
+import "@/styles/reference.scss";
 
-const display = Space_Grotesk({
+const serif = Instrument_Serif({
   subsets: ["latin"],
-  weight: ["500", "700"],
-  variable: "--font-display",
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-serif",
   display: "swap",
 });
 
-const body = Inter({
+const sans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500"],
-  variable: "--font-body",
-  display: "swap",
-});
-
-const mono = IBM_Plex_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-mono",
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -58,7 +52,7 @@ export const metadata: Metadata = {
     locale: "en_IN",
     images: [
       {
-        url: "/images/personal/portrait-formal.jpg",
+        url: "/images/personal/portrait-formal-cut.png",
         width: 1024,
         height: 854,
         alt: "Hemant Chaurasia in a navy suit and glasses.",
@@ -69,14 +63,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: profile.title,
     description: profile.description,
-    images: ["/images/personal/portrait-formal.jpg"],
+    images: ["/images/personal/portrait-formal-cut.png"],
   },
   robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable} js`}>
+    <html lang="en" className={`${serif.variable} ${sans.variable}`}>
       <body>
         <noscript>
           <style>{`[data-reveal],.hero-animate{opacity:1!important;transform:none!important}`}</style>

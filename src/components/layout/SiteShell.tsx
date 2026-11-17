@@ -1,25 +1,25 @@
 "use client";
 
 import { Suspense, type ReactNode } from "react";
-import { SmoothScroll } from "./SmoothScroll";
-import { Header } from "@/components/navigation/Header";
-import { ChapterRail } from "@/components/navigation/ChapterRail";
-import { Cursor } from "@/components/ui/Cursor";
-import { Footer } from "./Footer";
+import { PillNav } from "@/components/reference/PillNav";
+import { profile } from "@/data/profile";
 
 export function SiteShell({ children }: { children: ReactNode }) {
   return (
-    <SmoothScroll>
+    <>
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <Cursor />
-      <Suspense fallback={<div className="nav" />}>
-        <Header />
-        <ChapterRail />
+      <Suspense fallback={null}>
+        <PillNav />
       </Suspense>
       <main id="main">{children}</main>
-      <Footer />
-    </SmoothScroll>
+      <footer className="foot">
+        <p>{profile.name}</p>
+        <p>{profile.location}</p>
+        <a href={`mailto:${profile.email}`}>{profile.email}</a>
+        <a href="#top">Back to top</a>
+      </footer>
+    </>
   );
 }

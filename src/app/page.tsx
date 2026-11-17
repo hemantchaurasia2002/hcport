@@ -1,11 +1,4 @@
-import { Arrival } from "@/components/sections/Arrival";
-import { Builder } from "@/components/sections/Builder";
-import { Connection } from "@/components/sections/Connection";
-import { Explorer } from "@/components/sections/Explorer";
-import { Human } from "@/components/sections/Human";
-import { NextVersion } from "@/components/sections/NextVersion";
-import { Operator } from "@/components/sections/Operator";
-import { Player } from "@/components/sections/Player";
+import { HomeView } from "@/components/reference/HomeView";
 import { profile, siteUrl } from "@/data/profile";
 import { projects } from "@/data/projects";
 
@@ -29,7 +22,6 @@ const person = {
       name: "Khwaja Moinuddin Chishti Language University",
     },
     sameAs: [profile.linkedin, profile.github],
-    knowsAbout: ["JavaScript", "React", "Next.js", "Golang", "Python", "SQL", "Web development", "Community management"],
     description: profile.description,
   },
   hasPart: projects.map((project) => ({
@@ -43,14 +35,7 @@ const person = {
 export default function HomePage() {
   return (
     <>
-      <Arrival />
-      <Human />
-      <Builder />
-      <Operator />
-      <Player />
-      <Explorer />
-      <NextVersion />
-      <Connection />
+      <HomeView />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }} />
     </>
   );
